@@ -1,0 +1,30 @@
+{
+  "name": "url_shortner_api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/server.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/bcrypt": "^5.0.2",
+    "bcrypt": "^6.0.0",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "helmet": "^8.1.0",
+    "nanoid": "^3.3.4",
+    "zod": "^3.25.11"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.2",
+    "@types/helmet": "^0.0.48",
+    "@types/nanoid": "^2.1.0",
+    "@types/typescript": "^0.4.29",
+    "nodemon": "^3.1.10",
+    "typescript": "^5.8.3"
+  }
+}
