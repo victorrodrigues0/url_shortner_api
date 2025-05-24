@@ -5,14 +5,17 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon src/server.ts"
+    "dev": "nodemon src/server.ts",
+    "migrate": "npx prisma migrate dev"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@prisma/client": "^6.8.2",
     "@types/bcrypt": "^5.0.2",
     "bcrypt": "^6.0.0",
+    "cors": "^2.8.5",
     "dotenv": "^16.5.0",
     "express": "^5.1.0",
     "helmet": "^8.1.0",
@@ -20,11 +23,13 @@
     "zod": "^3.25.11"
   },
   "devDependencies": {
+    "@types/cors": "^2.8.18",
     "@types/express": "^5.0.2",
     "@types/helmet": "^0.0.48",
     "@types/nanoid": "^2.1.0",
     "@types/typescript": "^0.4.29",
     "nodemon": "^3.1.10",
+    "prisma": "^6.8.2",
     "typescript": "^5.8.3"
   }
 }
