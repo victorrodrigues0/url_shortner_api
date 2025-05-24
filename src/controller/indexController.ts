@@ -21,7 +21,9 @@ export const urlShortner: RequestHandler = (req, res) => {
     const urlData = urlValidation.data;
     const hashUrl = nanoid(6);
 
-    urls.set(hashUrl, urlData);
+    const data = {
+        
+    }
 
     res.status(200).json({
         "message": "URL Shortened",
